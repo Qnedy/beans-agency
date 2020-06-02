@@ -3,13 +3,15 @@ import React from 'react';
 import GlobalStyle from './globalStyles';
 import * as styles from './styles';
 
-import SuperiorNav from './components/SuperiorNav';
+import UpNav from './components/UpNav';
+import DownNav from './components/DownNav';
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <SuperiorNav />
+      <UpNav />
+      <DownNav />
       <styles.WeAreBeansContainer />
     </>
   );

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const SuperiorNavContainer = styled.div`
+export const UpNavContainer = styled.div`
   padding: 0 19px;
   display: flex;
   justify-content: space-between;

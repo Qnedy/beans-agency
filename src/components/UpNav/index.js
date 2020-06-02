@@ -9,9 +9,9 @@ import ruIcon from '../../assets/ru.svg';
 
 import SayHelloBtn from '../SayHelloBtn';
 
-export default function SuperiorNav(){
+export default function UpNav(){
   return(
-    <styles.SuperiorNavContainer>
+    <styles.UpNavContainer>
       <styles.Logo>
         <img src={blackLogo} alt="beans agency" />
         <ul>
@@ -23,6 +23,6 @@ export default function SuperiorNav(){
       <div>
         <SayHelloBtn />
       </div>
-    </styles.SuperiorNavContainer>
+    </styles.UpNavContainer>
   );
 }
