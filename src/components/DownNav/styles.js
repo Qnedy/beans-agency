@@ -13,6 +13,14 @@ export const DownNavContainer = styled.div`
   div:last-child{
     margin-top: 1em;
   }
+
+  @media (max-width: 1441px){
+    margin: 0 37px;
+  }
+
+  @media (max-width: 1025px){
+    margin: 0;
+  }
 `;
 
 export const Nav = styled.nav`
@@ -21,6 +29,14 @@ export const Nav = styled.nav`
   bottom: 61px;
   font-size: 12px;
   color: #1c2042;
-  font-family: 'Formular light';
+  font-family: 'Formular bold';
   line-height: 17px;
+
+  div{
+    ul{
+      li{
+        cursor: pointer;
+      }
+    }
+  }
 `;

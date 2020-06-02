@@ -13,4 +13,12 @@ export const Button = styled.a`
 
   padding: .5em;
   right: 19px;
+
+  @media (max-width: 1441px){
+    margin: 0 37px 0 0;
+  }
+
+  @media (max-width: 1025px){
+    margin: 0;
+  }
 `;
