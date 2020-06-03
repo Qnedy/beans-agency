@@ -12,8 +12,10 @@ function App() {
   return (
     <>
       <GlobalStyle />
+      
       <UpNav />
       <DownNav />
+      
       <styles.WeAreBeansContainer>
         <h1>We are <br /> Beans Agency®</h1>
         <video autoPlay loop>

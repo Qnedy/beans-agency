@@ -8,33 +8,30 @@ export const UpNavContainer = styled.div`
   height: 69px;
   background: transparent;
   width: 100%;
-  max-width: 1366px;
   position: fixed;
   z-index: 1;
-  align-self: center;
+  top: 0; 
+  left: 0;
+  right: 0;
 
-  @media (min-width: 1850px){
-    max-width: 1920px;
-  }
-
-  @media (max-width: 1760px){
-    margin: 0 195px;
-  }
-
-  @media (max-width: 1441px){
-    margin: 0 37px;
+  @media (max-width: 1849px){
+    max-width: 1366px;
+    margin: 0 auto;
   }
 
   @media (max-width: 1260px){
-    width: 984px;
+    max-width: 984px;
+    margin: 0 auto;
     padding: 0;
-    margin: 0 15px;
   }
 
   @media (max-width: 1000px){
-    width: 728px;
-    padding: 0;
-    margin: 0 100px;
+    max-width: 728px;
+  }
+
+  @media (max-width: 730px){
+    max-width: 414px;
+    padding: 0 19px;
   }
 
 `;
@@ -52,6 +49,10 @@ export const Logo = styled.div`
 
     img{
       margin: 0 3px;
+    }
+
+    @media (max-width: 730px){
+      display: none;
     }
   }
 `;

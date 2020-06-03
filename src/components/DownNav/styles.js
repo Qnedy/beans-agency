@@ -9,24 +9,26 @@ export const DownNavContainer = styled.div`
   background: transparent;
   width: 100%;
   position: fixed;
+  bottom: 55px;
 
   div:last-child{
     margin-top: 1em;
+
+    @media (max-width: 730px){
+      margin-top: 0;
+    }
   }
 
-  @media (max-width: 1441px){
-    margin: 0 37px;
+  @media (max-width: 1849px){
+    max-width: 1366px;
+    margin: 0 auto;
   }
 
-  @media (max-width: 1025px){
-    margin: 0;
-  }
 `;
 
 export const Nav = styled.nav`
   position: fixed;
   width: 120px;
-  bottom: 61px;
   font-size: 12px;
   color: #1c2042;
   font-family: 'Formular bold';
@@ -36,7 +38,55 @@ export const Nav = styled.nav`
     ul{
       li{
         cursor: pointer;
+
+        @media (max-width: 730px){
+          width: 300px;
+          margin-bottom: 6px;
+        }
+
+        @media (max-width: 426px){
+          width: 193px;
+        }
       }
     }
+
+    
   }
+
+  @media (max-width: 1849px){
+    margin: 0 auto;
+    left: 10vw;
+  }
+
+  @media (max-width: 1550px){
+    margin: 0 0 0 -2vw;
+    transition: ease-in-out .6s;
+  }
+
+  @media (max-width: 1310px){
+    margin: 0 0 0 -8vw;
+    transition: ease-in-out .6s;
+  }
+
+  @media (max-width: 1260px){
+    margin: 0;
+    transition: ease-in-out .6s;
+  }
+
+  @media (max-width: 1000px){
+    margin: 0 0 0 1.5vw;
+  }
+
+  @media (max-width: 730px){
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 25vh;
+    font-size: 14px;
+  }
+
+  @media (max-width: 426px){
+    left: 0;
+  }
+
 `;
