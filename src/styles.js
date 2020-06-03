@@ -23,6 +23,10 @@ export const WeAreBeansContainer = styled.section`
       transform: translate3d(0,0,0);
       object-fit: cover;
     }
+
+    @media (max-width: 425px){
+      left: -18%;
+    }
   }
 
   h1{
@@ -89,4 +93,54 @@ export const WeAreBeansContainer = styled.section`
     max-height: 320px;
   }
 
+`;
+
+//FIM HOME
+
+//INICIO ABOUT US
+
+export const AboutUsContainer = styled.section`
+  display: flex;
+  justify-content: space-between;
+  background-color: #FDE596;
+  height: auto;
+  padding: 180px 0 71px 271px;
+  flex-wrap: wrap;
+`;
+
+export const Member = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  span{
+    font-family: 'Formular bold';
+    margin-bottom: 182px;
+    height: auto;
+    width: 290px;
+    padding-bottom: 10px;
+    font-size: 40px;
+    letter-spacing: -2.4px;
+    line-height: 38px;
+    margin-top: -4px;
+    color: #1C2042;
+  }
+`;
+
+export const OlenkaAboutUs = styled.img`
+  height: 1170px;
+`;
+
+export const JuliaAboutUs = styled.img`
+  height: 793px;
+  right: -100px;
+`;
+
+export const LenaAboutUs = styled.img`
+  width: 796px;
+  margin-top: 15em;
+`;
+
+export const ValeraAboutUs = styled.img`
+  height: 699px;
+  margin-top: 15em;
 `;
