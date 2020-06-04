@@ -407,3 +407,104 @@ export const ServicesItem = styled.div`
   }
 
 `;
+
+// FIM OUR SERVICES
+
+// INICIO TEAM
+
+export const TeamContainer = styled.section`
+  background-color: #FFED8E;
+  height: auto;
+  z-index: -5;
+  padding-top: 177px;
+  padding-bottom: 170px;
+  padding-left: 271px;
+
+  h5{
+    color: #1C2042;
+    margin-bottom: 115px;
+    max-width: 543px;
+    font-size: 82px;
+    letter-spacing: -6.56px;
+    line-height: 78px;
+    min-height: 237px;
+  }
+`;
+
+export const SlideTeamContainer = styled.div`
+  max-height: 800px;
+  width: 100%;
+  display: flex;
+  overflow-x: auto !important;
+  overflow-y: hidden;
+`;
+
+export const LenaSlide = styled.img`
+  height: 722px;
+  margin-right: 20px;
+`;
+
+export const JuliaSlide = styled.img`
+  height: 468px;
+  margin-right: 20px;
+`;
+
+export const IllyaSlide = styled.img`
+  height: 722px;
+  margin-right: 20px;
+`;
+
+export const OlenkaSlide = styled.img`
+  height: 468px;
+  margin-right: 20px;
+`;
+
+export const VladaSlide = styled.img`
+  height: 722px;
+  margin-right: 20px;
+`;
+
+export const PolinaSlide = styled.img`
+  height: 468px;
+  margin-right: 20px;
+`;
+
+export const ChrisSlide = styled.img`
+  height: 722px;
+  margin-right: 20px;
+`;
+
+export const ValeraSlide = styled.img`
+  height: 468px;
+  margin-right: 20px;
+`;
+
+export const NazarSlide = styled.img`
+  height: 722px;
+`;
+
+export const TeamFooterText = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+
+  div{
+    width: 360px;
+
+    p{
+      font-size: 16px;
+    }
+
+    span{
+      font-size: 12px;
+      opacity: .5;
+      margin-top: 35px;
+    }
+
+    h6{
+      font-size: 40px;
+      letter-spacing: -2.4px;
+      line-height: 38px;
+    }
+  }
+`;
