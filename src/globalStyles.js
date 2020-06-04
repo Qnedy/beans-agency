@@ -29,6 +29,12 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
+
+  body{
+    color: #1C2042;
+    font-family: "Formular bold";
+  }
+
 `;
 
 export default GlobalStyle;

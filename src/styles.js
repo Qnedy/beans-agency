@@ -5,7 +5,7 @@ export const WeAreBeansContainer = styled.section`
   height: 100vh;
 
   video{
-    position: fixed;
+    position: relative;
     min-width: 100%;
     min-height: 100%;
     max-height: 100%;
@@ -99,7 +99,7 @@ export const WeAreBeansContainer = styled.section`
 
 //INICIO ABOUT US
 
-export const AboutUsContainer = styled.section`
+export const MembersContainer = styled.section`
   display: flex;
   justify-content: space-between;
   background-color: #FDE596;
@@ -143,4 +143,205 @@ export const LenaAboutUs = styled.img`
 export const ValeraAboutUs = styled.img`
   height: 699px;
   margin-top: 15em;
+`;
+
+export const FraseContainer = styled.section`
+  background-color: #F9EFF1;
+  padding-top: 158px;
+  padding-bottom: 86px;
+  min-height: 100vh;
+  padding-left: 271px;
+  color: #1C2042;
+
+  h5{
+    font-size: 82px;
+    font-weight: 700;
+    letter-spacing: -4.92px;
+    line-height: 78px;
+    margin-bottom: 93px;
+    font-family: 'Formular bold';
+  }
+
+  div{
+    width: 441px;
+
+    p{
+      font-family: 'Formular bold';
+      font-size: 14px;
+      margin-top: 6px;
+    }
+  }
+`;
+
+export const BrifVideo = styled.section`
+  background-color: transparent;
+  height: 100vh;
+
+  video{
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    object-fit: cover;
+    z-index: -2;
+  }
+
+`;
+
+export const TitleContainer = styled.div`
+  position: absolute;
+  right: 280px;
+  top: 555%;
+  font-size: 30px;
+  letter-spacing: -2.4px;
+  font-family: "Formular bold";
+  line-height: 30px;
+
+  div{
+    position: relative;
+    display: block;
+
+    span{
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+`;
+
+export const PolinaAboutUsContainer = styled.section `
+  height: 130vh;
+  padding-top: 170px;
+  padding-bottom: 117px;
+  padding-left: 271px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 873px;
+
+    h6{
+      float: left;
+      max-width: 374px;
+      font-size: 40px;
+      letter-spacing: -2.4px;
+      line-height: 38px;
+      margin: 0 0 87px;
+
+      span{
+        background-color: #EFD6DB;
+        padding: 0 4px;
+        display: inline-block;
+        padding: 0 4px;
+      }
+    }
+
+    p{
+      bottom: 10px;
+      width: 277px;
+      opacity: .5;
+      font-size: 14px;
+      letter-spacing: -.84px;
+      line-height: 18px;
+    }
+  }
+`;
+
+
+export const PolinaAboutUs = styled.img`
+  height: 873px;
+  width: 525px;
+`;
+
+export const IllyaAboutUsContainer = styled.section `
+  
+  padding-top: 90px;
+  padding-bottom: 131px;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #BADBE5;
+
+  p{
+    font-size: 14px;
+    letter-spacing: -.84px;
+    line-height: 18px;
+    max-width: 240px;
+  }
+`;
+
+export const IllyaAboutUs = styled.img`
+  height: 769px;
+`;
+
+// FIM ABOUT US
+
+
+// INICIO CASES
+
+export const CasesContainer = styled.section`
+  padding-top: 177px;
+  padding-bottom: 170px;
+  padding-left: 271px;
+  height: 120vh;
+
+
+  h5{
+    font-size: 82px;
+    font-weight: 700;
+    letter-spacing: -4.92px;
+    line-height: 78px;
+    margin-bottom: 200px;
+  }
+`;
+
+// FIM CASES 
+
+// INICIO HOW HE DO
+
+export const HowContainer = styled.section`
+  overflow-x: hidden;
+  
+  video{
+    height: 100%;
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    top: 0;
+    left: 0 !important;
+    transform: translate3d(0,0,0);
+    object-fit: cover;
+    z-index: -3;
+    
+  }
+
+  span{
+    font-size: 82px;
+    font-weight: 700;
+    letter-spacing: -6.56px;
+    line-height: 78px;
+  }
+`;
+
+export const TextContainer = styled.div`
+  left: 271px;
+  position: absolute;
+  top: 950vh;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  p{
+    width: 106px;
+    font-size: 16px;
+  }
 `;
