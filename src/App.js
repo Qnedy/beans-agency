@@ -210,16 +210,9 @@ function App() {
               We’ll help you realize everything you’ve planned.
             </p>
           </styles.ServicesItem>
-
-          
-
-
-          
-        
-          
-        
-          
         </styles.ServicesItemsContainer>
+
+        
           
       </styles.OurServicesContainer>
     </>
