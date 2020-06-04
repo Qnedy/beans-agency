@@ -12,6 +12,7 @@ import CaseItem from './components/CaseItem';
 import mainVideo from './assets/Main-Page-1.mp4';
 import brifVideo from './assets/Brif-1.mp4';
 import carVideo from './assets/car-1.mp4';
+import helloVideo from './assets/Hello-1.mp4';
 
 import Olenka from './assets/Olenka-1.webp';
 import Julia from './assets/Yulya-1.webp';
@@ -30,6 +31,8 @@ import PolinaSlide from './assets/PolinaSlide.jpg';
 import ChrisSlide from './assets/ChrisSlide.jpg';
 import ValeraSlide from './assets/ValeraSlide.jpg';
 import NazarSlide from './assets/Nazar.jpg';
+
+import { GrFacebookOption, GrInstagram } from 'react-icons/gr';
 
 
 function App() {
@@ -292,6 +295,42 @@ function App() {
           
         </styles.TeamFooterText>
       </styles.TeamContainer>
+
+      <styles.HelloVideo>
+        <video autoPlay loop>
+          <source src={helloVideo} type="video/mp4"/>
+        </video>
+      </styles.HelloVideo>
+
+      <styles.FooterContainer>
+        <styles.BriefSocialContainer>
+          <styles.BriefContact>
+            <span>
+              +380961011555
+              info@beans.agency
+              Or
+            </span>
+            <ActionsBtn textBtn="here is a brief" type="medium" color="#1c2042"/>
+          </styles.BriefContact>
+
+          <styles.Social>
+            <p>Kulparkivska 200a, Lviv Futura Hub</p>
+
+            <div>
+              <p>Follow us</p>
+              <div>
+                <GrFacebookOption color="#FFFF"/>
+                <GrInstagram color="#FFFF"/>
+              </div>
+            </div>
+          </styles.Social>
+        </styles.BriefSocialContainer>
+
+        <styles.Copy>
+          <p>All rights reserved 2020 © Beans Agency</p>
+          <p>Made by <span>dops.digital</span></p>
+        </styles.Copy>
+      </styles.FooterContainer>
     </>
   );
 }

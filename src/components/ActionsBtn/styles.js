@@ -32,6 +32,29 @@ export const ActionsButtonTextSmall = styled.a`
   padding: 0 4px 6px 0;
 `;
 
+// MEDIUM
+
+export const ActionsButtonCircularMedium = styled.a`
+  height: 46px;
+  width: 46px;
+  background-color: #EFD6DB;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 5px;
+`;
+
+export const ActionsButtonTextMedium = styled.a`
+  color: #1C2042;
+  font-size: 40px;
+  letter-spacing: -2.4px;
+  line-height: 38px;
+  cursor: pointer;
+  background-color: #EFD6DB;
+  padding: 0;
+`;
 
 
 // LARGE

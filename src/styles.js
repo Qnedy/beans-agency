@@ -508,3 +508,95 @@ export const TeamFooterText = styled.div`
     }
   }
 `;
+
+
+export const HelloVideo = styled.section`
+  overflow-x: hidden;
+
+  video{
+    position: relative;
+    min-width: 100%;
+    min-height: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    z-index: -4;
+  }
+`;
+
+// FIM TEAM
+
+
+// INICIO FOOTER
+
+export const FooterContainer = styled.footer`
+  background-color: #1C2042;
+  height: 75vh;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 87px;
+  padding-bottom: 248px;
+  padding-left: 271px;
+  flex-direction: column;
+
+  div{
+
+    span{
+      color: #FFFF;
+      font-size: 40px;
+    }
+  }
+`;
+
+export const BriefSocialContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const BriefContact = styled.div`
+  width: 365px;
+  padding-top: 4em;
+`;
+
+export const Social = styled.div`
+  color: #FFFF;
+  font-size: 24px;
+  max-width: 183px;
+  margin-right: 15em;
+  padding-top: 4em;
+
+  div{
+    p{
+      font-size: 12px;
+      margin: 40px 0 25px 0;
+    }
+
+    div{
+      svg{
+        margin-right: 10px;
+      }
+    }
+  }
+`;
+
+export const Copy = styled.div`
+  font-size: 12px;
+  color: #FFFF;
+  opacity: .5;
+  display: flex;
+  justify-content: space-between; 
+  margin-top: 20em;
+
+  p{
+    width: 365px;
+
+    span{
+      font-size: 12px;
+      color: #FFFF;
+      opacity: 1;
+    }
+  }
+
+  &:last-child{
+    margin-right: 15em;
+  }
+`;

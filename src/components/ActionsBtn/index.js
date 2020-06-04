@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { RiArrowRightUpLine, RiArrowRightLine } from 'react-icons/ri';
+import { RiArrowRightUpLine, RiArrowRightLine, RiArrowDownLine } from 'react-icons/ri';
 
 import * as styles from './styles';
 
@@ -16,6 +16,12 @@ export default function ActionsBtn(props){
                 <styles.ActionsButtonCircularSmall>
                   <RiArrowRightUpLine size={30} color={props.color}/>
                 </styles.ActionsButtonCircularSmall></>
+            case "medium":
+              return <><styles.ActionsButtonTextMedium>{props.textBtn}</styles.ActionsButtonTextMedium>
+        
+                <styles.ActionsButtonCircularMedium>
+                  <RiArrowDownLine size={30} color={props.color}/>
+                </styles.ActionsButtonCircularMedium></>
             case "large":
               return <><styles.ActionsButtonTextLarge>{props.textBtn}</styles.ActionsButtonTextLarge>
         
