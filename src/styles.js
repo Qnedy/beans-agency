@@ -345,3 +345,65 @@ export const TextContainer = styled.div`
     font-size: 16px;
   }
 `;
+
+// FIM HOW HE DO
+
+// INICIO OUR SERVICES
+
+export const OurServicesContainer = styled.section`
+  height: 150vh;
+  background-color: #1C203E;
+  padding-top: 177px;
+  padding-bottom: 170px;
+  padding-left: 271px;
+
+  h5{
+    font-size: 82px;
+    font-weight: 700;
+    letter-spacing: -4.92px;
+    line-height: 78px;
+    margin-bottom: 200px;
+    color: #FFFFFF;
+    width: 293px;
+  }
+`;
+
+export const ServicesItemsContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 546px;
+`;
+
+export const ServicesItem = styled.div`
+  color: #FFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 145px;
+  width: 50%;
+  padding-right: 10%;
+
+  div{
+    text-align: left;
+
+    svg{
+      height: 50px;
+      left: 0;
+    }
+  }
+
+  span{
+    font-size: 24px;
+    letter-spacing: -1.44px;
+    line-height: 25px;
+    margin: 0 0 17px;
+  }
+
+  p{
+    opacity: .5;
+    font-size: 14px;
+    letter-spacing: -.84px;
+    line-height: 18px;
+  }
+
+`;
