@@ -55,7 +55,7 @@ function App() {
       <styles.MembersContainer>
 
         <styles.Member>
-          <styles.OlenkaAboutUs src={Olenka} alt="Olenka" />
+          <styles.OlenkaAboutUs src="https://beans.agency/wp-content/uploads/2019/11/Olenka-1.jpg" alt="Olenka" />
           <NamePost name="Olenka" post="Account manager" />
         </styles.Member>
 
