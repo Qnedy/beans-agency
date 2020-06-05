@@ -15,10 +15,6 @@ import brifVideo from './assets/Brif-1.mp4';
 import carVideo from './assets/car-1.mp4';
 import helloVideo from './assets/Hello-1.mp4';
 
-import Olenka from './assets/Olenka-1.webp';
-import Julia from './assets/Yulya-1.webp';
-import Lena from './assets/Lena.-webp.webp';
-import Valera from './assets/Valera-1.webp';
 import Polina from './assets/Vlada-1.jpg';
 import Illya from './assets/Illya-1.jpg';
 
@@ -61,17 +57,17 @@ function App() {
 
         <styles.Member>
           <span>One bean is good, but eight ones make a pod.</span>
-          <styles.JuliaAboutUs src={Julia} alt="Julia" />
+          <styles.JuliaAboutUs src="https://beans.agency/wp-content/uploads/2019/11/Yulya-1.jpg" alt="Julia" />
           <NamePost name="Julia" post="Co-founder" />
         </styles.Member>
 
         <styles.Member>
-          <styles.LenaAboutUs src={Lena} alt="Lena" />
+          <styles.LenaAboutUs src="https://beans.agency/wp-content/uploads/2019/11/Lena.jpeg.jpg" alt="Lena" />
           <NamePost name="Lena" post="Co-founder" />
         </styles.Member>
 
         <styles.Member>
-          <styles.ValeraAboutUs src={Valera} alt="Valera" />
+          <styles.ValeraAboutUs src="https://beans.agency/wp-content/uploads/2019/11/Valera-1.jpg" alt="Valera" />
           <NamePost name="Valera" post="Creative copywriter" />
         </styles.Member>
       </styles.MembersContainer>
