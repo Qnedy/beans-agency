@@ -15,6 +15,15 @@ export const WeAreBeansContainer = styled.section`
     object-fit: cover;
     z-index: -1;
 
+    @media (max-width: 1260px){
+      height: auto;
+      top: 0;
+      left: 0;
+      transform: translate3d(0,0,0);
+      object-fit: cover;
+      width: 100vw;
+    }
+
     @media (max-width: 750px){
       min-height: 320px;
       max-height: 320px;
@@ -27,6 +36,7 @@ export const WeAreBeansContainer = styled.section`
     @media (max-width: 425px){
       left: -18%;
     }
+
   }
 
   h1{
@@ -58,7 +68,8 @@ export const WeAreBeansContainer = styled.section`
     }
 
     @media (max-width: 1550px){
-      margin: 0 0 0 6vw;
+      margin: 0;
+      left: 230px;
       transition: ease-in-out .6s;
     }
 
@@ -106,6 +117,11 @@ export const MembersContainer = styled.section`
   height: auto;
   padding: 180px 0 71px 271px;
   flex-wrap: wrap;
+
+
+  @media (max-width: 1260px){
+    padding: 128px 0 41px 142px;
+  }
 `;
 
 export const Member = styled.div`
@@ -123,26 +139,72 @@ export const Member = styled.div`
     line-height: 38px;
     margin-top: -4px;
     color: #1C2042;
+
+    @media (max-width: 1550px){
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 1260px){
+      margin-bottom: 0px;
+    }
   }
 `;
 
 export const OlenkaAboutUs = styled.img`
   height: 1170px;
+
+  @media (max-width: 1550px){
+    height: 823px;
+  }
+
+  @media (max-width: 1260px){
+    height: 520px;
+  }
 `;
 
 export const JuliaAboutUs = styled.img`
   height: 793px;
   right: -100px;
+
+  @media (max-width: 1550px){
+    height: 555px;
+  }
+
+  @media (max-width: 1260px){
+    height: auto;
+    width: 271px;
+  }
 `;
 
 export const LenaAboutUs = styled.img`
   width: 796px;
   margin-top: 15em;
+
+  @media (max-width: 1550px){
+    width: 560px;
+    margin-top: 10em;
+  }
+
+  @media (max-width: 1260px){
+    height: 392px;
+    width: 430px;
+    margin-top: 10em;
+  }
 `;
 
 export const ValeraAboutUs = styled.img`
   height: 699px;
   margin-top: 15em;
+
+  @media (max-width: 1550px){
+    height: 489px;
+    margin-top: 10em;
+  }
+
+  @media (max-width: 1260px){
+    height: 282px;
+    margin-top: 10em;
+  }
 `;
 
 export const FraseContainer = styled.section`
@@ -160,6 +222,12 @@ export const FraseContainer = styled.section`
     line-height: 78px;
     margin-bottom: 93px;
     font-family: 'Formular bold';
+
+    @media (max-width: 1260px){
+      font-size: 61px;
+      letter-spacing: -3.66px;
+      line-height: 58px;
+    }
   }
 
   div{
@@ -187,6 +255,15 @@ export const BrifVideo = styled.section`
     transform: translate3d(-50%,-50%,0);
     object-fit: cover;
     z-index: -2;
+
+    @media (max-width: 1260px){
+      height: auto;
+      top: 0;
+      left: 0;
+      transform: translate3d(0,0,0);
+      object-fit: cover;
+      width: 100vw;
+    }
   }
 
 `;
@@ -208,6 +285,16 @@ export const TitleContainer = styled.div`
       display: inline-block;
       vertical-align: top;
     }
+  }
+
+  @media (max-width: 1550px){
+    right: 100px;
+    top: 605%;
+  }
+
+  @media (max-width: 1260px){
+    right: 80px;
+    top: 463%;
   }
 `;
 
@@ -250,13 +337,40 @@ export const PolinaAboutUsContainer = styled.section `
       letter-spacing: -.84px;
       line-height: 18px;
     }
+
+    @media (max-width: 1550px){
+      height: 700px;
+    }
+
+    @media (max-width: 1260px){
+      height: 541px;
+    }
+    
   }
+
+  @media (max-width: 1550px){
+    height: 140vh;
+    padding-top: 70px;
+    padding-bottom: 127px;
+  }
+
+  
 `;
 
 
 export const PolinaAboutUs = styled.img`
   height: 873px;
   width: 525px;
+
+  @media (max-width: 1550px){
+    height: 642px;
+    width: 386px;
+  }
+
+  @media (max-width: 1260px){
+    height: 482px;
+    width: 290px;
+  }
 `;
 
 export const IllyaAboutUsContainer = styled.section `
@@ -279,6 +393,14 @@ export const IllyaAboutUsContainer = styled.section `
 
 export const IllyaAboutUs = styled.img`
   height: 769px;
+
+  @media (max-width: 1550px){
+    height: 600px;
+  }
+
+  @media (max-width: 1260px){
+    height: 468px;
+  }
 `;
 
 // FIM ABOUT US
@@ -300,6 +422,19 @@ export const CasesContainer = styled.section`
     line-height: 78px;
     margin-bottom: 200px;
   }
+
+  @media (max-width: 1550px){
+    padding-top: 100px;
+    padding-bottom: 130px;
+    padding-left: 271px;
+    height: 160vh;
+  }
+
+  @media (max-width: 1260px){
+    padding-top: 124px;
+    padding-bottom: 68px;
+    padding-left: 142px;
+  }
 `;
 
 // FIM CASES 
@@ -320,7 +455,25 @@ export const HowContainer = styled.section`
     transform: translate3d(0,0,0);
     object-fit: cover;
     z-index: -3;
+
+    @media (max-width: 1550px){
+      height: 100vh;
+      top: 0;
+      left: 50%;
+      transform: translate3d(0,0,0);
+      object-fit: cover;
+      width: 200vw;
+    }
     
+
+    @media (max-width: 1260px){
+      height: auto;
+      top: 0;
+      left: 0;
+      transform: translate3d(0,0,0);
+      object-fit: cover;
+      width: 200vw;
+    }
   }
 
   span{
@@ -344,6 +497,16 @@ export const TextContainer = styled.div`
     width: 106px;
     font-size: 16px;
   }
+
+  @media (max-width: 1550px){
+    top: 1080vh;
+  }
+
+  @media (max-width: 1260px){
+    left: 160px;
+    top: 825vh;
+    font-size: 61px;
+  }
 `;
 
 // FIM HOW HE DO
@@ -365,6 +528,29 @@ export const OurServicesContainer = styled.section`
     margin-bottom: 200px;
     color: #FFFFFF;
     width: 293px;
+
+    @media (max-width: 1550px){
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 1260px){
+      font-size: 61px;
+      letter-spacing: -4.88px;
+      line-height: 58px;
+
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 1550px){
+    padding-bottom: 34px;
+    height: 170vh;
+  }
+
+  @media (max-width: 1260px){
+    padding-top: 124px;
+    padding-bottom: 68px;
+    padding-left: 142px;
   }
 `;
 
@@ -372,6 +558,14 @@ export const ServicesItemsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   padding-left: 546px;
+
+  @media (max-width: 1550px){
+    padding-left: 280px;
+  }
+
+  @media (max-width: 1260px){
+    padding-left: 300px;
+  }
 `;
 
 export const ServicesItem = styled.div`
@@ -406,6 +600,14 @@ export const ServicesItem = styled.div`
     line-height: 18px;
   }
 
+  @media (max-width: 1550px){
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: 1260px){
+    margin-bottom: 115px;
+  }
+
 `;
 
 // FIM OUR SERVICES
@@ -428,59 +630,154 @@ export const TeamContainer = styled.section`
     letter-spacing: -6.56px;
     line-height: 78px;
     min-height: 237px;
+
+    @media (max-width: 1260px){
+      font-size: 61px;
+      letter-spacing: -4.88px;
+      line-height: 58px;
+
+      margin-bottom: 20px;
+      width: 460px;
+    }
+  }
+
+  @media (max-width: 1260px){
+    padding-top: 124px;
+    padding-bottom: 68px;
+    padding-left: 142px;
   }
 `;
 
 export const SlideTeamContainer = styled.div`
-  max-height: 800px;
+  height: 800px;
   width: 100%;
   display: flex;
   overflow-x: auto !important;
   overflow-y: hidden;
+
+  @media (max-width: 1550px){
+    height: 590px;
+  }
+
+  @media (max-width: 1260px){
+    align-items: center;
+  }
 `;
 
 export const LenaSlide = styled.img`
   height: 722px;
   margin-right: 20px;
+
+  @media (max-width: 1550px){
+    height: 505px;
+  }
+
+  @media (max-width: 1260px){
+    height: 370px;
+  }
 `;
 
 export const JuliaSlide = styled.img`
   height: 468px;
   margin-right: 20px;
+
+  @media (max-width: 1550px){
+    height: 328px;
+  }
+
+  @media (max-width: 1260px){
+    height: 242px;
+  }
 `;
 
 export const IllyaSlide = styled.img`
   height: 722px;
   margin-right: 20px;
+
+  @media (max-width: 1550px){
+    height: 505px;
+  }
+
+  @media (max-width: 1260px){
+    height: 370px;
+  }
 `;
 
 export const OlenkaSlide = styled.img`
   height: 468px;
   margin-right: 20px;
+
+  @media (max-width: 1550px){
+    height: 328px;
+  }
+
+  @media (max-width: 1260px){
+    height: 242px;
+  }
 `;
 
 export const VladaSlide = styled.img`
   height: 722px;
   margin-right: 20px;
+
+  @media (max-width: 1550px){
+    height: 505px;
+  }
+
+  @media (max-width: 1260px){
+    height: 370px;
+  }
 `;
 
 export const PolinaSlide = styled.img`
   height: 468px;
   margin-right: 20px;
+
+  @media (max-width: 1550px){
+    height: 328px;
+  }
+
+  @media (max-width: 1260px){
+    height: 242px;
+  }
 `;
 
 export const ChrisSlide = styled.img`
   height: 722px;
   margin-right: 20px;
+
+  @media (max-width: 1550px){
+    height: 505px;
+  }
+
+  @media (max-width: 1260px){
+    height: 370px;
+  }
 `;
 
 export const ValeraSlide = styled.img`
   height: 468px;
   margin-right: 20px;
+
+  @media (max-width: 1550px){
+    height: 328px;
+  }
+
+  @media (max-width: 1260px){
+    height: 242px;
+  }
 `;
 
 export const NazarSlide = styled.img`
   height: 722px;
+
+  @media (max-width: 1550px){
+    height: 505px;
+  }
+
+  @media (max-width: 1260px){
+    height: 370px;
+  }
 `;
 
 export const TeamFooterText = styled.div`
@@ -520,6 +817,19 @@ export const HelloVideo = styled.section`
     max-height: 90%;
     object-fit: cover;
     z-index: -4;
+
+    @media (max-width: 1550px){
+      height: 100vh;
+    }
+
+    @media (max-width: 1260px){
+      height: auto;
+      top: 0;
+      left: 0;
+      transform: translate3d(0,0,0);
+      object-fit: cover;
+      width: 100vw;
+    }
   }
 `;
 
@@ -545,16 +855,43 @@ export const FooterContainer = styled.footer`
       font-size: 40px;
     }
   }
+
+  @media (max-width: 1550px){
+    height: 86vh;
+    padding-top: 47px;
+    padding-bottom: 148px;
+  }
+
+  @media (max-width: 1260px){
+    padding-left: 142px;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 60vh;
+  }
 `;
 
 export const BriefSocialContainer = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 1550px){
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  @media (max-width: 1260px){
+    padding-top: 61px;
+    padding-bottom: 153px;
+  }
 `;
 
 export const BriefContact = styled.div`
   width: 365px;
   padding-top: 4em;
+
+  @media (max-width: 1260px){
+    padding-top: 0;
+  }
 `;
 
 export const Social = styled.div`
@@ -575,6 +912,15 @@ export const Social = styled.div`
         margin-right: 10px;
       }
     }
+  }
+
+  @media (max-width: 1550px){
+    padding-top: 2em;
+  }
+
+  @media (max-width: 1260px){
+    padding-top: 0;
+    margin-right: 5em;
   }
 `;
 
@@ -598,5 +944,18 @@ export const Copy = styled.div`
 
   &:last-child{
     margin-right: 15em;
+
+    @media (max-width: 1260px){
+      margin-right: 0;
+      
+    }
+  }
+
+  @media (max-width: 1550px){
+    margin-top: 11em;
+  }
+
+  @media (max-width: 1260px){
+    margin-top: 0em;
   }
 `;

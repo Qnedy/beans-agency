@@ -59,7 +59,7 @@ export const Nav = styled.nav`
   }
 
   @media (max-width: 1550px){
-    margin: 0 0 0 -2vw;
+    margin: 0 0 0 -5vw;
     transition: ease-in-out .6s;
   }
 
@@ -69,7 +69,7 @@ export const Nav = styled.nav`
   }
 
   @media (max-width: 1260px){
-    margin: 0;
+    margin: 0 0 0 -6em;
     transition: ease-in-out .6s;
   }
 

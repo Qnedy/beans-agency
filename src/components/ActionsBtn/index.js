@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { RiArrowRightUpLine, RiArrowRightLine, RiArrowDownLine } from 'react-icons/ri';
 
 import * as styles from './styles';

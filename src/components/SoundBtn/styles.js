@@ -20,7 +20,7 @@ export const Button = styled.a`
   }
 
   @media (max-width: 1550px){
-    margin: 0 -2vw 0 0;
+    margin: 0 -8vw 0 0;
     transition: ease-in-out .6s;
   }
 

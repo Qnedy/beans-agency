@@ -68,6 +68,11 @@ export const ActionsButtonCircularLarge = styled.a`
   align-items: center;
   justify-content: center;
   cursor: pointer;
+
+  @media (max-width: 1260px){
+    height: 64px;
+    width: 64px;
+  }
 `;
 
 export const ActionsButtonTextLarge = styled.a`
@@ -80,4 +85,9 @@ export const ActionsButtonTextLarge = styled.a`
   padding: 24px 0 35px 0;
   left: 192px;
   top: 107px;
+
+  @media (max-width: 1260px){
+    font-size: 61px;
+    padding: 14px 0 25px 0;
+  }
 `;
