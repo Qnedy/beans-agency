@@ -45,8 +45,8 @@ function App() {
       
       <styles.WeAreBeansContainer>
         <h1>We are <br /> Beans Agency®</h1>
-        <video autoPlay loop>
-          <source src={mainVideo} type="video/mp4"/>
+        <video autoPlay="autoPlay" loop>
+          <source src="https://beans.agency/wp-content/uploads/2020/01/Main-Page-1.mp4" type="video/mp4"/>
         </video>  
       </styles.WeAreBeansContainer>
 
@@ -103,7 +103,7 @@ function App() {
           <ActionsBtn textBtn="Here is a brief" type="small" color="#f1d8dd"/>
         </styles.TitleContainer>
 
-        <video autoPlay loop>
+        <video autoPlay="autoPlay" loop>
           <source src={brifVideo} type="video/mp4"/>
         </video>
 
@@ -164,7 +164,7 @@ function App() {
         </styles.TextContainer>
         
 
-        <video autoPlay loop>
+        <video autoPlay="autoPlay" loop>
           <source src={carVideo} type="video/mp4"/>
         </video>
       </styles.HowContainer>
@@ -288,7 +288,7 @@ function App() {
 
           <div>
             <h6>
-              We <svg class="heart" xmlns="http://www.w3.org/2000/svg" width="25" height="21" viewBox="0 0 25 21"> <g> <g> <path fill="#1c2042" d="M6.64.188c-4.023 0-6.626 4-6.64 7.286-.026 6.044 12.097 13.508 12.097 13.508S24.222 13.52 24.196 7.474C24.181 4.187 21.577.188 17.554.188c-1.845 0-4.173 1.202-5.457 2.334C10.813 1.39 8.485.188 6.64.188z"></path> </g> </g> </svg> <br />
+              We <svg xmlns="http://www.w3.org/2000/svg" width="25" height="21" viewBox="0 0 25 21"> <g> <g> <path fill="#1c2042" d="M6.64.188c-4.023 0-6.626 4-6.64 7.286-.026 6.044 12.097 13.508 12.097 13.508S24.222 13.52 24.196 7.474C24.181 4.187 21.577.188 17.554.188c-1.845 0-4.173 1.202-5.457 2.334C10.813 1.39 8.485.188 6.64.188z"></path> </g> </g> </svg> <br />
               what we do
             </h6>
           </div>
@@ -297,7 +297,7 @@ function App() {
       </styles.TeamContainer>
 
       <styles.HelloVideo>
-        <video autoPlay loop>
+        <video autoPlay="autoPlay" loop>
           <source src={helloVideo} type="video/mp4"/>
         </video>
       </styles.HelloVideo>
