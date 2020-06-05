@@ -16,8 +16,6 @@ export const Item = styled.div`
     @media (max-width: 1260px){
       width: 400px;
     }
-
-    
   }
 
   h6{
@@ -36,7 +34,21 @@ export const Item = styled.div`
   @media (max-width: 1260px){
     padding: 2em 0em 2em 0;
   }
+  
 `;
+
+export const What = styled.div`
+  @media (max-width: 426px){
+    display: none;
+  }
+`;
+
+export const Category = styled.div`
+  @media (max-width: 426px){
+    display: none;
+  }
+`;
+
 
 export const ExpandBtn = styled.div`
   border: 2px solid #D2D2D9;
@@ -53,5 +65,6 @@ export const ExpandBtn = styled.div`
     opacity: 1;
   }
 
+  
   
 `;

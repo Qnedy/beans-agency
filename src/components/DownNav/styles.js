@@ -24,6 +24,42 @@ export const DownNavContainer = styled.div`
     margin: 0 auto;
   }
 
+  @media (max-width: 426px){
+    display: none;
+  }
+
+`;
+
+export const DownNavContainerMobile = styled.div`
+  padding: 0 19px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  height: 69px;
+  background: transparent;
+  width: 100%;
+  position: fixed;
+  bottom: 55px;
+
+  div:last-child{
+    margin-top: 1em;
+
+    @media (max-width: 730px){
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: 1849px){
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 426px){
+    display: flex;
+    position: absolute;
+    bottom: 30vh;
+  }
+
 `;
 
 export const Nav = styled.nav`
@@ -86,7 +122,11 @@ export const Nav = styled.nav`
   }
 
   @media (max-width: 426px){
-    left: 0;
+    left: auto;
+    position: absolute !important;
+    width: 120px;
+    bottom: auto;
+    line-height: 17px;
   }
 
 `;

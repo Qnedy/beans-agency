@@ -5,6 +5,7 @@ import * as styles from './styles';
 
 import UpNav from './components/UpNav';
 import DownNav from './components/DownNav';
+import LateralNav from './components/LateralNav';
 import NamePost from './components/NamePost';
 import ActionsBtn from './components/ActionsBtn';
 import CaseItem from './components/CaseItem';
@@ -41,6 +42,7 @@ function App() {
       <GlobalStyle />
       
       <UpNav />
+      <LateralNav />
       <DownNav />
       
       <styles.WeAreBeansContainer>
@@ -76,7 +78,7 @@ function App() {
       <styles.FraseContainer>
         <h5>
           Big business means <br />
-          taking the risk, <br />
+          <span>taking the risk,</span> <br />
           although not all <br />
           business owners <br />
           are ready for this
@@ -103,6 +105,16 @@ function App() {
           <ActionsBtn textBtn="Here is a brief" type="small" color="#f1d8dd"/>
         </styles.TitleContainer>
 
+        <styles.TitleContainerMobile>
+          <div>
+            <span>Do you want to be</span>
+          </div>
+          <div>
+            <span>a hero brand?</span>
+          </div>
+          <ActionsBtn textBtn="Here is a brief" type="small" color="#f1d8dd"/>
+        </styles.TitleContainerMobile>
+
         <video autoPlay="autoPlay" loop>
           <source src={brifVideo} type="video/mp4"/>
         </video>
@@ -127,10 +139,12 @@ function App() {
       </styles.PolinaAboutUsContainer>
 
       <styles.IllyaAboutUsContainer>
-        <styles.Member>
-          <styles.IllyaAboutUs src={Illya} alt="Illya" />
-          <NamePost name="Illya" post="Creative director" />
-        </styles.Member>
+        <div>
+          <styles.Member>
+            <styles.IllyaAboutUs src={Illya} alt="Illya" />
+            <NamePost name="Illya" post="Creative director" />
+          </styles.Member>
+        </div>
 
         <p>
           We have a superpower called Full of beans, 
@@ -162,6 +176,15 @@ function App() {
 
           <p>We believe in six efficient methods.</p>
         </styles.TextContainer>
+
+        <styles.TextContainerMobile>
+          <div>
+            <span>How we do</span>
+            <ActionsBtn textBtn="this?" type="large" color="#D1E0F5"/>
+          </div>
+
+          <p>We believe in six efficient methods.</p>
+        </styles.TextContainerMobile>
         
 
         <video autoPlay="autoPlay" loop>

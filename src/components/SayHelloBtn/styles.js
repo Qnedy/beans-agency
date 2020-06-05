@@ -34,7 +34,27 @@ export const ButtonCircular = styled.a`
   cursor: pointer;
   outline: none;
 
-  @media (max-width: 730px){
+  @media (max-width: 730px) and(min-width: 427px){
     display: flex;
+  }
+
+`;
+
+export const ButtonCircularLateral = styled.a`
+  display: none;
+  align-items: center;
+  background: #1c2042;
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  height: 36px;
+  width: 36px;
+  font-family: 'Formular bold';
+  cursor: pointer;
+  outline: none;
+
+  @media (max-width: 426px){
+    display: flex;
+    margin: 0 15px 0 0;
   }
 `;

@@ -11,6 +11,7 @@ import SayHelloBtn from '../SayHelloBtn';
 
 export default function UpNav(){
   return(
+    <>
     <styles.UpNavContainer>
       <styles.Logo>
         <img src={blackLogo} alt="beans agency" />
@@ -20,9 +21,17 @@ export default function UpNav(){
           <li><a><img src={ruIcon} alt="bandeira ru" /></a></li>
         </ul>
       </styles.Logo>
+
       <div>
         <SayHelloBtn />
       </div>
     </styles.UpNavContainer>
+
+    <styles.UpNavContainerMobile>
+      <styles.LogoMobile>
+        <img src={blackLogo} alt="beans agency" />
+      </styles.LogoMobile>
+    </styles.UpNavContainerMobile>
+    </>
   );
 }

@@ -44,7 +44,7 @@ export const Button = styled.a`
   }
 
   @media (max-width: 426px){
-    margin: 0 -20px 0 0;
+    margin: 0 -30px 0 0;
     bottom: 20px;
   }
 `;

@@ -33,8 +33,12 @@ export const WeAreBeansContainer = styled.section`
       object-fit: cover;
     }
 
-    @media (max-width: 425px){
-      left: -18%;
+    @media (max-width: 426px){
+      top: 0;
+      left: 0;
+      transform: translate3d(0,0,0);
+      object-fit: cover;
+      width: 100vw;
     }
 
   }
@@ -122,6 +126,13 @@ export const MembersContainer = styled.section`
   @media (max-width: 1260px){
     padding: 128px 0 41px 142px;
   }
+
+  @media (max-width: 426px){
+    padding: 150px 20px;
+    margin: 0 auto;
+  }
+
+  
 `;
 
 export const Member = styled.div`
@@ -147,6 +158,12 @@ export const Member = styled.div`
     @media (max-width: 1260px){
       margin-bottom: 0px;
     }
+
+    @media (max-width: 426px){
+      font-size: 35px;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
   }
 `;
 
@@ -159,6 +176,10 @@ export const OlenkaAboutUs = styled.img`
 
   @media (max-width: 1260px){
     height: 520px;
+  }
+
+  @media (max-width: 426px){
+    height: 555px;
   }
 `;
 
@@ -173,6 +194,10 @@ export const JuliaAboutUs = styled.img`
   @media (max-width: 1260px){
     height: auto;
     width: 271px;
+  }
+
+  @media (max-width: 426px){
+    width: 376px;
   }
 `;
 
@@ -190,6 +215,12 @@ export const LenaAboutUs = styled.img`
     width: 430px;
     margin-top: 10em;
   }
+
+  @media (max-width: 426px){
+    width: 376px;
+    margin-top: 4em;
+    background-size: cover;
+  }
 `;
 
 export const ValeraAboutUs = styled.img`
@@ -204,6 +235,11 @@ export const ValeraAboutUs = styled.img`
   @media (max-width: 1260px){
     height: 282px;
     margin-top: 10em;
+  }
+
+  @media (max-width: 426px){
+    height: 555px;
+    margin-top: 4em;
   }
 `;
 
@@ -223,10 +259,20 @@ export const FraseContainer = styled.section`
     margin-bottom: 93px;
     font-family: 'Formular bold';
 
+    span{
+      background-color: #f9d0ca;
+    }
+
     @media (max-width: 1260px){
       font-size: 61px;
       letter-spacing: -3.66px;
       line-height: 58px;
+    }
+
+    @media (max-width: 426px){
+      font-size: 35px;
+      letter-spacing: -2.1px;
+      line-height: 35px;
     }
   }
 
@@ -238,6 +284,16 @@ export const FraseContainer = styled.section`
       font-size: 14px;
       margin-top: 6px;
     }
+
+    @media (max-width: 426px){
+      width: 376px;
+    }
+  }
+
+  @media (max-width: 426px){
+    padding: 40px 19px;
+    margin: 0 auto;
+    min-height: auto;
   }
 `;
 
@@ -264,7 +320,24 @@ export const BrifVideo = styled.section`
       object-fit: cover;
       width: 100vw;
     }
+
+    @media (max-width: 426px){
+      min-width: 50%;
+      min-height: 320px;
+      max-height: 320px;
+      top: 0;
+      left: 50%;
+      transform: translate3d(-50%,0,0);
+      object-fit: cover;
+    }
   }
+
+  @media (max-width: 426px){
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  
 
 `;
 
@@ -295,6 +368,26 @@ export const TitleContainer = styled.div`
   @media (max-width: 1260px){
     right: 80px;
     top: 463%;
+  }
+
+  @media (max-width: 426px){
+    display: none;
+  }
+`;
+
+export const TitleContainerMobile = styled.div`
+  background-color: #FEDBD8;
+  padding: 40px 20px;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 35px;
+  letter-spacing: -2.1px;
+  line-height: 35px;
+  display: none;
+
+  @media (max-width: 426px){
+    display: flex;
+    flex-direction: column;
   }
 `;
 
@@ -327,6 +420,13 @@ export const PolinaAboutUsContainer = styled.section `
         display: inline-block;
         padding: 0 4px;
       }
+
+      @media (max-width: 426px){
+        font-size: 35px;
+        letter-spacing: -2.1px;
+        line-height: 35px;
+        margin: 0 0 40px;
+      }
     }
 
     p{
@@ -345,13 +445,24 @@ export const PolinaAboutUsContainer = styled.section `
     @media (max-width: 1260px){
       height: 541px;
     }
-    
+
+    @media (max-width: 426px){
+      height: auto;
+    }
   }
 
   @media (max-width: 1550px){
     height: 140vh;
     padding-top: 70px;
     padding-bottom: 127px;
+  }
+
+  @media (max-width: 426px){
+    padding: 40px 20px;
+    margin: 0 auto;
+    min-height: auto;
+    flex-direction: column;
+    height: auto;
   }
 
   
@@ -371,10 +482,15 @@ export const PolinaAboutUs = styled.img`
     height: 482px;
     width: 290px;
   }
+
+  @media (max-width: 426px){
+    height: 570px;
+    width: 376px;
+    margin-top: 40px;
+  }
 `;
 
 export const IllyaAboutUsContainer = styled.section `
-  
   padding-top: 90px;
   padding-bottom: 131px;
   padding-left: 0px;
@@ -383,12 +499,34 @@ export const IllyaAboutUsContainer = styled.section `
   justify-content: space-evenly;
   background-color: #BADBE5;
 
+  div{
+    @media (max-width: 426px){
+      order: 2;
+    }
+  }
+
   p{
     font-size: 14px;
     letter-spacing: -.84px;
     line-height: 18px;
     max-width: 240px;
+
+    @media (max-width: 426px){
+      max-width: 346px;
+      position: relative;
+      margin-bottom: 20px;
+      opacity: .5;
+      order: 1;
+    }
   }
+
+  @media (max-width: 426px){
+    flex-direction: column;
+    padding: 40px 20px;
+    margin: 0 auto;
+  }
+
+  
 `;
 
 export const IllyaAboutUs = styled.img`
@@ -400,6 +538,11 @@ export const IllyaAboutUs = styled.img`
 
   @media (max-width: 1260px){
     height: 468px;
+  }
+
+  @media (max-width: 426px){
+    width: 376px;
+    height: 354px;
   }
 `;
 
@@ -421,6 +564,11 @@ export const CasesContainer = styled.section`
     letter-spacing: -4.92px;
     line-height: 78px;
     margin-bottom: 200px;
+
+    @media (max-width: 426px){
+      font-size: 46px;
+      margin-bottom: 38px;
+    }
   }
 
   @media (max-width: 1550px){
@@ -434,6 +582,12 @@ export const CasesContainer = styled.section`
     padding-top: 124px;
     padding-bottom: 68px;
     padding-left: 142px;
+  }
+
+  @media (max-width: 426px){
+    padding: 40px 20px;
+    margin: 0 auto;
+    height: auto;
   }
 `;
 
@@ -474,6 +628,16 @@ export const HowContainer = styled.section`
       object-fit: cover;
       width: 200vw;
     }
+
+    @media (max-width: 426px){
+      min-width: 50%;
+      min-height: 50%;
+      max-height: 50%;
+      top: 0;
+      left: 50%;
+      transform: translate3d(-25%,0,0);
+      object-fit: cover;
+    }
   }
 
   span{
@@ -481,6 +645,12 @@ export const HowContainer = styled.section`
     font-weight: 700;
     letter-spacing: -6.56px;
     line-height: 78px;
+  }
+
+  @media (max-width: 426px){
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
   }
 `;
 
@@ -506,6 +676,26 @@ export const TextContainer = styled.div`
     left: 160px;
     top: 825vh;
     font-size: 61px;
+  }
+
+  @media (max-width: 426px){
+    display: none;
+  }
+`;
+
+export const TextContainerMobile = styled.div`
+  display: none;
+  background-color: #D9E3F9;
+  padding: 40px 20px;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 35px;
+  letter-spacing: -2.1px;
+  line-height: 35px;
+
+  @media (max-width: 426px){
+    display: flex;
+    flex-direction: column;
   }
 `;
 
@@ -540,6 +730,11 @@ export const OurServicesContainer = styled.section`
 
       margin-bottom: 20px;
     }
+
+    @media (max-width: 426px){
+      font-size: 46px;
+      width: 164px;
+    }
   }
 
   @media (max-width: 1550px){
@@ -551,6 +746,12 @@ export const OurServicesContainer = styled.section`
     padding-top: 124px;
     padding-bottom: 68px;
     padding-left: 142px;
+  }
+
+  @media (max-width: 426px){
+    padding: 40px 20px;
+    margin: 0 auto;
+    height: auto;
   }
 `;
 
@@ -565,6 +766,11 @@ export const ServicesItemsContainer = styled.div`
 
   @media (max-width: 1260px){
     padding-left: 300px;
+  }
+
+  @media (max-width: 426px){
+    flex-direction: column;
+    padding-left: 0px;
   }
 `;
 
@@ -608,6 +814,11 @@ export const ServicesItem = styled.div`
     margin-bottom: 115px;
   }
 
+  @media (max-width: 426px){
+    width: 90%;
+    margin-bottom: 60px;
+  }
+
 `;
 
 // FIM OUR SERVICES
@@ -639,12 +850,25 @@ export const TeamContainer = styled.section`
       margin-bottom: 20px;
       width: 460px;
     }
+
+    @media (max-width: 426px){
+      font-size: 46px;
+      max-width: 310px;
+      margin-bottom: 40px;
+      min-height: auto;
+    }
   }
 
   @media (max-width: 1260px){
     padding-top: 124px;
     padding-bottom: 68px;
     padding-left: 142px;
+  }
+
+  @media (max-width: 426px){
+    padding: 40px 20px;
+    margin: 0 auto;
+    height: auto;
   }
 `;
 
@@ -661,6 +885,10 @@ export const SlideTeamContainer = styled.div`
 
   @media (max-width: 1260px){
     align-items: center;
+  }
+
+  @media (max-width: 426px){
+    height: auto;
   }
 `;
 
@@ -803,6 +1031,14 @@ export const TeamFooterText = styled.div`
       letter-spacing: -2.4px;
       line-height: 38px;
     }
+
+    &:first-child{
+      margin: 0 0 59px;
+    }
+  }
+
+  @media (max-width: 426px){
+    flex-direction: column;
   }
 `;
 
@@ -829,6 +1065,14 @@ export const HelloVideo = styled.section`
       transform: translate3d(0,0,0);
       object-fit: cover;
       width: 100vw;
+    }
+
+    @media (max-width: 426px){
+      top: 0;
+      left: 0;
+      height: 437px;
+      transform: translate3d(0,0,0);
+      object-fit: cover;
     }
   }
 `;
@@ -868,6 +1112,12 @@ export const FooterContainer = styled.footer`
     padding-bottom: 0;
     height: 60vh;
   }
+
+  @media (max-width: 426px){
+    height: auto;
+    padding: 40px 20px;
+    margin: 0 auto;
+  }
 `;
 
 export const BriefSocialContainer = styled.div`
@@ -882,6 +1132,12 @@ export const BriefSocialContainer = styled.div`
   @media (max-width: 1260px){
     padding-top: 61px;
     padding-bottom: 153px;
+  }
+
+  @media (max-width: 426px){
+    flex-direction: column;
+    padding-top: 61px;
+    padding-bottom: 90px;
   }
 `;
 
@@ -921,6 +1177,10 @@ export const Social = styled.div`
   @media (max-width: 1260px){
     padding-top: 0;
     margin-right: 5em;
+  }
+
+  @media (max-width: 1260px){
+    padding-top: 2em;
   }
 `;
 

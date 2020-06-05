@@ -12,15 +12,15 @@ export default function CaseItem(props){
         <h6>{props.case}</h6>
       </div>
         
-      <div>
+      <styles.What>
         <span>What We Do</span>
         <p>{props.what}</p>
-      </div>
+      </styles.What>
 
-      <div>
+      <styles.Category>
         <span>Category</span>
         <p>{props.category}</p>
-      </div>
+      </styles.Category>
 
       <styles.ExpandBtn>
         <MdArrowDropDown size={20} color="#1C2042" opacity={1}/>
