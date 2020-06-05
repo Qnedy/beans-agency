@@ -27,6 +27,26 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     outline: 0;
     list-style: none;
+
+    @keyframes rotateAnimation{
+      to{
+        transform: rotate(0deg);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeAnimation{
+      to{
+        opacity: 1;
+        transition: .3s ease;
+      }
+    }
+
+    @keyframes hidde{
+      to{
+        opacity: 0;
+      }
+    }
   }
 
 

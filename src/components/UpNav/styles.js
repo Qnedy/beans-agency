@@ -13,6 +13,8 @@ export const UpNavContainer = styled.div`
   top: 0; 
   left: 0;
   right: 0;
+  animation: fadeAnimation 1.5s ease .2s forwards;
+  opacity: 0;
 
   @media (max-width: 1849px){
     max-width: 1366px;
@@ -39,6 +41,8 @@ export const UpNavContainer = styled.div`
     display: none;
   }
 
+  
+
 `;
 
 export const UpNavContainerMobile = styled.div`
@@ -54,6 +58,8 @@ export const UpNavContainerMobile = styled.div`
   top: 0; 
   left: 0;
   right: 0;
+  animation: fadeAnimation 1.5s ease .2s forwards;
+  opacity: 0;
 
   @media (max-width: 426px){
     display: flex;
@@ -84,6 +90,7 @@ export const Logo = styled.div`
 
 export const LogoMobile = styled.div`
   display: none;
+  
 
   img{
     cursor: pointer;

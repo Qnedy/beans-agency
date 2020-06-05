@@ -54,6 +54,12 @@ export const WeAreBeansContainer = styled.section`
     font-family: 'Formular bold';
     color: #1C2042;
     transition: ease-in-out .6s;
+    opacity: 0;
+    transform: rotate(-6deg);
+    animation: rotateAnimation cubic-bezier(.29,.04,.23,1) 1s forwards;
+    transform-origin: bottom left;
+    
+    
 
 
     @media (min-width: 1850px){
@@ -139,36 +145,43 @@ export const Member = styled.div`
   display: flex;
   flex-direction: column;
 
-  span{
-    font-family: 'Formular bold';
-    margin-bottom: 182px;
-    height: auto;
-    width: 290px;
-    padding-bottom: 10px;
-    font-size: 40px;
-    letter-spacing: -2.4px;
-    line-height: 38px;
-    margin-top: -4px;
-    color: #1C2042;
+`;
 
-    @media (max-width: 1550px){
-      margin-bottom: 20px;
-    }
+export const SpanMember = styled.span`
+  font-family: 'Formular bold';
+  margin-bottom: 182px;
+  height: auto;
+  width: 290px;
+  padding-bottom: 10px;
+  font-size: 40px;
+  letter-spacing: -2.4px;
+  line-height: 38px;
+  margin-top: -4px;
+  color: #1C2042;
+  transform: rotate(-6deg);
+  opacity: 0;
+  animation: ${props => `${props.animation}`} cubic-bezier(.29,.04,.23,1) 1s forwards;
+  transform-origin: bottom left;
 
-    @media (max-width: 1260px){
-      margin-bottom: 0px;
-    }
+  @media (max-width: 1550px){
+    margin-bottom: 20px;
+  }
 
-    @media (max-width: 426px){
-      font-size: 35px;
-      margin-bottom: 30px;
-      margin-top: 30px;
-    }
+  @media (max-width: 1260px){
+    margin-bottom: 0px;
+  }
+
+  @media (max-width: 426px){
+    font-size: 35px;
+    margin-bottom: 30px;
+    margin-top: 30px;
   }
 `;
 
 export const OlenkaAboutUs = styled.img`
   height: 1170px;
+  animation: ${props => `${props.animation}`} 1.5s ease .2s forwards;
+  opacity: 0;
 
   @media (max-width: 1550px){
     height: 823px;
@@ -186,6 +199,8 @@ export const OlenkaAboutUs = styled.img`
 export const JuliaAboutUs = styled.img`
   height: 793px;
   right: -100px;
+  animation: ${props => `${props.animation}`} 1.5s ease .2s forwards;
+  opacity: 0;
 
   @media (max-width: 1550px){
     height: 555px;
@@ -204,6 +219,8 @@ export const JuliaAboutUs = styled.img`
 export const LenaAboutUs = styled.img`
   width: 796px;
   margin-top: 15em;
+  animation: ${props => `${props.animation}`} 1.5s ease .2s forwards;
+  opacity: 0;
 
   @media (max-width: 1550px){
     width: 560px;
@@ -226,6 +243,8 @@ export const LenaAboutUs = styled.img`
 export const ValeraAboutUs = styled.img`
   height: 699px;
   margin-top: 15em;
+  animation: ${props => `${props.animation}`} 1.5s ease .2s forwards;
+  opacity: 0;
 
   @media (max-width: 1550px){
     height: 489px;
@@ -250,34 +269,22 @@ export const FraseContainer = styled.section`
   min-height: 100vh;
   padding-left: 271px;
   color: #1C2042;
+  
 
-  h5{
-    font-size: 82px;
-    font-weight: 700;
-    letter-spacing: -4.92px;
-    line-height: 78px;
-    margin-bottom: 93px;
-    font-family: 'Formular bold';
-
-    span{
-      background-color: #f9d0ca;
-    }
-
-    @media (max-width: 1260px){
-      font-size: 61px;
-      letter-spacing: -3.66px;
-      line-height: 58px;
-    }
-
-    @media (max-width: 426px){
-      font-size: 35px;
-      letter-spacing: -2.1px;
-      line-height: 35px;
-    }
+  @media (max-width: 426px){
+    padding: 40px 19px;
+    margin: 0 auto;
+    min-height: auto;
   }
+`;
 
+export const TextHeart = styled.div`
   div{
-    width: 441px;
+    width: 441px !important;
+    transform: rotate(-6deg);
+    opacity: 0;
+    animation: ${props => `${props.animation}`} cubic-bezier(.29,.04,.23,1) 1s forwards;
+    transform-origin: center center;
 
     p{
       font-family: 'Formular bold';
@@ -289,11 +296,32 @@ export const FraseContainer = styled.section`
       width: 376px;
     }
   }
+`;
+
+export const FraseContainerTitle = styled.h5`
+  font-size: 82px;
+  font-weight: 700;
+  letter-spacing: -4.92px;
+  line-height: 82px;
+  margin-bottom: 93px;
+  font-family: 'Formular bold';
+  animation: ${props => `${props.animation}`} 1.5s ease .2s forwards;
+  opacity: 0;
+
+  span{
+    background-color: #f9d0ca;
+  }
+
+  @media (max-width: 1260px){
+    font-size: 61px;
+    letter-spacing: -3.66px;
+    line-height: 58px;
+  }
 
   @media (max-width: 426px){
-    padding: 40px 19px;
-    margin: 0 auto;
-    min-height: auto;
+    font-size: 35px;
+    letter-spacing: -2.1px;
+    line-height: 35px;
   }
 `;
 
@@ -407,26 +435,7 @@ export const PolinaAboutUsContainer = styled.section `
     height: 873px;
 
     h6{
-      float: left;
-      max-width: 374px;
-      font-size: 40px;
-      letter-spacing: -2.4px;
-      line-height: 38px;
-      margin: 0 0 87px;
-
-      span{
-        background-color: #EFD6DB;
-        padding: 0 4px;
-        display: inline-block;
-        padding: 0 4px;
-      }
-
-      @media (max-width: 426px){
-        font-size: 35px;
-        letter-spacing: -2.1px;
-        line-height: 35px;
-        margin: 0 0 40px;
-      }
+      
     }
 
     p{
@@ -451,6 +460,8 @@ export const PolinaAboutUsContainer = styled.section `
     }
   }
 
+
+
   @media (max-width: 1550px){
     height: 140vh;
     padding-top: 70px;
@@ -468,10 +479,41 @@ export const PolinaAboutUsContainer = styled.section `
   
 `;
 
+export const PolinaAboutUsTitle = styled.h6`
+    float: left;
+    max-width: 374px;
+    font-size: 40px;
+    letter-spacing: -2.4px;
+    line-height: 38px;
+    margin: 0 0 87px;
+    transform: rotate(-6deg);
+    opacity: 0;
+    animation: ${props => `${props.animation}`} cubic-bezier(.29,.04,.23,1) 1s forwards;
+    transform-origin: bottom left;
+
+    span{
+      background-color: #EFD6DB;
+      padding: 0 4px;
+      display: inline-block;
+      padding: 0 4px;
+    }
+
+    @media (max-width: 426px){
+      font-size: 35px;
+      letter-spacing: -2.1px;
+      line-height: 35px;
+      margin: 0 0 40px;
+    }
+    
+  `;
+
 
 export const PolinaAboutUs = styled.img`
   height: 873px;
   width: 525px;
+
+  animation: ${props => `${props.animation}`} 1.5s ease .2s forwards;
+  opacity: 0;
 
   @media (max-width: 1550px){
     height: 642px;

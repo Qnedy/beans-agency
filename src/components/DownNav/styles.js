@@ -10,6 +10,10 @@ export const DownNavContainer = styled.div`
   width: 100%;
   position: fixed;
   bottom: 55px;
+  opacity: 0;
+  transform: rotate(-6deg);
+  animation: rotateAnimation cubic-bezier(.29,.04,.23,1) 1s forwards;
+  transform-origin: bottom left;
 
   div:last-child{
     margin-top: 1em;

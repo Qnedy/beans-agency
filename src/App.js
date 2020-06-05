@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import GlobalStyle from './globalStyles';
 import * as styles from './styles';
@@ -33,6 +33,60 @@ import { GrFacebookOption, GrInstagram } from 'react-icons/gr';
 
 
 function App() {
+  const [olenka, setOlenka] = useState('hidde');
+  const [julia, setJulia] = useState('hidde');
+  const [span, setSpan] = useState('hidde');
+  const [lena, setLena] = useState('hidde');
+  const [valera, setValera] = useState('hidde');
+  const [fraseTitle, setFraseTitle] = useState('hidde');
+  const [textHeart, setTextHeart] = useState('hidde');
+  const [polinaTitle, setPolinaTitle] = useState('hidde');
+  const [polinaImage, setPolinaImage] = useState('hidde');
+  const [illyaText, setIllyaText] = useState('hidde');
+  const [illyaImage, setIllyaImage] = useState('hidde');
+
+  useEffect(() => {
+    window.onscroll = () => handleScrollOlenka();
+  }, []);
+
+  function handleScrollOlenka() { 
+    if (document.documentElement.scrollTop > 230) {
+      setOlenka('fadeAnimation')
+    }
+    
+    if (document.documentElement.scrollTop > 410) {
+      setJulia('fadeAnimation')
+    }
+
+    if (document.documentElement.scrollTop > 390) {
+      setSpan('rotateAnimation')
+    }
+
+    if (document.documentElement.scrollTop > 1400) {
+      setLena('fadeAnimation')
+    }
+
+    if (document.documentElement.scrollTop > 1400) {
+      setValera('fadeAnimation')
+    }
+
+    if (document.documentElement.scrollTop > 2000) {
+      setFraseTitle('fadeAnimation')
+    }
+
+    if (document.documentElement.scrollTop > 2100) {
+      setTextHeart('rotateAnimation')
+    }
+
+    if (document.documentElement.scrollTop > 3000) {
+      setPolinaTitle('rotateAnimation')
+    }
+
+    if (document.documentElement.scrollTop > 3000) {
+      setPolinaImage('fadeAnimation')
+    }
+   }
+
   return (
     <>
       <GlobalStyle />
@@ -51,42 +105,42 @@ function App() {
       <styles.MembersContainer>
 
         <styles.Member>
-          <styles.OlenkaAboutUs src="https://beans.agency/wp-content/uploads/2019/11/Olenka-1.jpg" alt="Olenka" />
+          <styles.OlenkaAboutUs animation={olenka} src="https://beans.agency/wp-content/uploads/2019/11/Olenka-1.jpg" alt="Olenka" />
           <NamePost name="Olenka" post="Account manager" />
         </styles.Member>
 
         <styles.Member>
-          <span>One bean is good, but eight ones make a pod.</span>
-          <styles.JuliaAboutUs src="https://beans.agency/wp-content/uploads/2019/11/Yulya-1.jpg" alt="Julia" />
+          <styles.SpanMember animation={span}>One bean is good, but eight ones make a pod.</styles.SpanMember>
+          <styles.JuliaAboutUs animation={julia} src="https://beans.agency/wp-content/uploads/2019/11/Yulya-1.jpg" alt="Julia" />
           <NamePost name="Julia" post="Co-founder" />
         </styles.Member>
 
         <styles.Member>
-          <styles.LenaAboutUs src="https://beans.agency/wp-content/uploads/2019/11/Lena.jpeg.jpg" alt="Lena" />
+          <styles.LenaAboutUs animation={lena} src="https://beans.agency/wp-content/uploads/2019/11/Lena.jpeg.jpg" alt="Lena" />
           <NamePost name="Lena" post="Co-founder" />
         </styles.Member>
 
         <styles.Member>
-          <styles.ValeraAboutUs src="https://beans.agency/wp-content/uploads/2019/11/Valera-1.jpg" alt="Valera" />
+          <styles.ValeraAboutUs animation={valera} src="https://beans.agency/wp-content/uploads/2019/11/Valera-1.jpg" alt="Valera" />
           <NamePost name="Valera" post="Creative copywriter" />
         </styles.Member>
       </styles.MembersContainer>
       <styles.FraseContainer>
-        <h5>
+        <styles.FraseContainerTitle animation={fraseTitle}>
           Big business means <br />
           <span>taking the risk,</span> <br />
           although not all <br />
           business owners <br />
           are ready for this
-        </h5>
+        </styles.FraseContainerTitle>
 
-        <div>
+        <styles.TextHeart animation={textHeart}>
           <svg xmlns="http://www.w3.org/2000/svg" width="31" height="13" viewBox="0 0 31 13"> <g> <g> <path fill="#1c2042"
   d="M3.872.187C1.526.187.008 2.519 0 4.435c-.015 3.525 7.053 7.876 7.053 7.876s7.07-4.351 7.055-7.876C14.1 2.52 12.581.187 10.235.187c-1.076 0-2.433.701-3.182 1.36C6.305.889 4.948.188 3.872.188z"/> </g> <g> <path fill="#e8a4a5"
   d="M20.22.187c-2.346 0-3.863 2.332-3.872 4.248-.015 3.525 7.054 7.876 7.054 7.876s7.07-4.351 7.055-7.876C30.448 2.52 28.93.187 26.584.187c-1.076 0-2.434.701-3.182 1.36-.749-.659-2.106-1.36-3.182-1.36z"/> </g> </g> </svg>
 
           <p>Your brand will be loved at first sight, spoken of and even slightly envied as they are not like you.</p>
-        </div>
+        </styles.TextHeart>
         
       </styles.FraseContainer>
 
@@ -119,17 +173,17 @@ function App() {
 
       <styles.PolinaAboutUsContainer>
         <div>
-          <h6>
+          <styles.PolinaAboutUsTitle animation={polinaTitle}>
             We are here to start the journey of business decisions or brands up to the world through a completely new, <br />
             <span>sometimes <br /> unknown and risky</span> <br />
             road
-          </h6>
+          </styles.PolinaAboutUsTitle>
 
           <p>You know, only the complete willingness to give up everything customary will provide a desired result.</p>
         </div>
 
         <styles.Member>
-          <styles.PolinaAboutUs src={Polina} alt="Polina" />
+          <styles.PolinaAboutUs animation={polinaImage} src={Polina} alt="Polina" />
           <NamePost name="Polina" post="Motion designer" />
         </styles.Member>
       </styles.PolinaAboutUsContainer>
